@@ -1,0 +1,23 @@
+nav.navbar.navbar-fixed-top {
+    background-color: #383E4C;
+}
+li {
+    float: left;
+    
+}
+ul {
+    list-style: none;
+   
+}
+li a {
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 16px;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+li a:hover {
+    background-color: #111111;
+	   text-decoration: none;
+}
