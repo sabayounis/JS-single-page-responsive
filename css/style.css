@@ -1,3 +1,12 @@
+body{
+	
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100vh;
+	
+}
+
 nav.navbar.navbar-fixed-top {
     background-color: #383E4C;
 }
@@ -12,12 +21,135 @@ ul {
 li a {
     color: #ffffff !important;
     text-decoration: none;
-    padding: 16px;
+       padding: 13px 25px;
     font-size: 20px;
-    text-align: center;
     display: block;
+    border: 1px solid #646d7c;
+    margin: 5px 15px 15px 3px;
+    font-weight: 500;
+    background-color: #383E4C;
 }
 li a:hover {
-    background-color: #111111;
+    background-color: #525761;
 	   text-decoration: none;
+}
+.header-container {
+    text-align: center;
+    margin-left: 15%;
+}
+.main-slider{
+	position:relative;
+}
+
+.slide1{
+	background: url("../images/bg4.jpg");
+	display:block;
+   
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height:650px;
+	 margin-top: 87px;
+	   
+
+}
+.slide2{
+	background:url("../images/bg2.jpeg") ;
+	display:block;
+    position:absolute;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height:650px;
+   
+	 margin-top: 87px;
+		
+
+	
+}
+.slide3{
+	background-image:url("../images/bg3.jpeg");
+	display:block;
+    position:absolute;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height:650px;
+   
+	 margin-top: 87px;
+		
+}
+.slider-content h1{
+	
+color: #fff;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;	
+}
+.slider-content h4 {
+    color: #fff;
+}
+	
+.slider-content {
+    margin-top: 251px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#slide-left {
+  border-width: 25px 36px 24px 0;
+  border-color: transparent #bebfbf transparent transparent;
+  left: 0;
+  margin-left: 90px;
+      margin-top: -35px;
+}
+#slide-right {
+  border-width: 25px 0px 24px 36px;
+  border-color: transparent transparent transparent #bebfbf;
+  right: 0;
+  margin-right: 90px;
+      margin-top: -35px;
+}
+div#section2 {
+    margin-top: 70px;
+}
+
+.col-content {
+    overflow: hidden;
+    display: block;
+    background: #F2F2F2;
+}
+.col-content img {
+    height: 180px;
+	width: 100%;
+}
+.col-content h2 {
+    color: #178A27;
+	margin-left: 20px;
+}
+h2.h2-web {
+    color: #1686C1;
+}
+h2.h2-mob {
+    color: #29264e;
+}
+.col-content p {
+    margin: 0 0 10px;
+    text-align: justify;
+    margin-left: 18px;
+    margin-right: 18px;
+    line-height: 1.6em;
+    font-size: 14px;
 }

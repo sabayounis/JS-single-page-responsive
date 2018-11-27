@@ -7,22 +7,177 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<nav  class="navbar navbar-fixed-top navbar-inverse" > 
+		<nav  class="navbar navbar-inverse navbar-fixed-top " > 
 			
 			<div class="container"> 
-			<div class="header-container">
-				<ul> 
+				<div class="header-container">
+					<ul > 
+						
+						<li> <a href="section1">Home</a> </li>
+						<li> <a href="section2">Services</a> </li>
+						<li> <a href="">About us</a> </li>
+						<li> <a href="">Contact us</a> </li>
+						<li> <a href="">Projects</a> </li>
+					</ul>
 					
-					<li> <a href="">Home</a> </li>
-					<li> <a href="">Services</a> </li>
-					<li> <a href="">About us</a> </li>
-					<li> <a href="">Contact us</a> </li>
-				</ul>
-				
 				</div>
 				
 				
 			</div>
-		</nav>
+		</nav> 
+		
+		
+		<div class="section1">
+			
+			<div class="wrap">
+				<div id="slide-left" class="arrow"> </div>
+				<div class="slider"> 
+					
+					<div class="slide slide1"> 
+						
+						
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<div class="slider-content">
+										<h1>Quality Work</h1>
+										<h4>Place where you get best</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="slide slide2"> 
+						<div class="slide-contet"> 
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12 text-center">
+										<div class="slider-content">
+											<h1>CONQUER</h1>
+											<h4>Simple Bootstrap Template</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="slide slide3"> 
+						<div class="slide-contet"> 
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12 text-center">
+										<div class="slider-content">
+											<h1>CONQUER</h1>
+											<h4>Simple Bootstrap Template</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div id="slide-right" class="arrow"> </div>
+		<div id="section2">
+			<div class="container">
+				<div class="row "> 
+					<div class="col-sm-4"> 
+						<div class="col-content"> 
+							<img src="images/img1.jpeg" alt="" />
+							<h2> Responsive Design</h2>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis ligula sit amet lacus volutpat, non sollicitudin odio euismod. Morbi commodo rhoncus elit. Curabitur at sapien quis diam fermentum cursus. Mauris pretium tellus sapien, nec rhoncus odio faucibus facilisis. Pellentesque vitae vehicula odio. Donec ultrices libero eu ligula viverra posuere. Nulla consequat scelerisque odio, ac sodales risus hendrerit ut.</p>
+							<a href="#" class="feature-content-link red-btn">Button Red</a>
+							</div>
+						
+						
+						</div><div class="col-sm-4"> 
+						<div class="col-content"> 
+							<img src="images/img3.jpeg" alt="" />
+							<h2 class="h2-web"> Website Design</h2>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis ligula sit amet lacus volutpat, non sollicitudin odio euismod. Morbi commodo rhoncus elit. Curabitur at sapien quis diam fermentum cursus. Mauris pretium tellus sapien, nec rhoncus odio faucibus facilisis. Pellentesque vitae vehicula odio. Donec ultrices libero eu ligula viverra posuere. Nulla consequat scelerisque odio, ac sodales risus hendrerit ut.</p>
+							
+							</div>
+						
+						
+						</div><div class="col-sm-4"> 
+						<div class="col-content"> 
+							<img src="images/bg3.jpeg" alt="" />
+							
+							<h2 class="h2-mob">Mobile Design</h2>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis ligula sit amet lacus volutpat, non sollicitudin odio euismod. Morbi commodo rhoncus elit. Curabitur at sapien quis diam fermentum cursus. Mauris pretium tellus sapien, nec rhoncus odio faucibus facilisis. Pellentesque vitae vehicula odio. Donec ultrices libero eu ligula viverra posuere. Nulla consequat scelerisque odio, ac sodales risus hendrerit ut.</p>
+							</div>
+						
+						
+						</div>
+					
+					
+				</div>
+				
+			</div>	
+		</div>
+		<script>
+			
+			var sliderImages = document.querySelectorAll(".slide"),
+			arrowLeft = document.querySelector("#slide-left"),
+		arrowRight = document.querySelector("#slide-right"),
+		current = 0;
+		
+		// Clear all images
+		function reset() {
+			for (var i = 0; i < sliderImages.length; i++) {
+				sliderImages[i].style.display = "none";
+			}
+		}
+		
+		// Init slider
+		function startSlide() {
+			reset();
+			sliderImages[0].style.display = "block";
+		}
+		
+		// Show prev
+		function slideLeft() {
+			reset();
+			sliderImages[current - 1].style.display = "block";
+			current--;
+		}
+		
+		// Show next
+		function slideRight() {
+			reset();
+			sliderImages[current + 1].style.display = "block";
+			current++;
+		}
+		
+		// Left arrow click
+		arrowLeft.addEventListener("click", function() {
+			if (current === 0) {
+				current = sliderImages.length;
+			}
+			slideLeft();
+		});
+		
+		// Right arrow click
+		arrowRight.addEventListener("click", function() {
+			if (current === sliderImages.length - 1) {
+				current = -1;
+			}
+			slideRight();
+		});
+		
+		startSlide();
+		
+		</script>
 	</body>
 </html>
