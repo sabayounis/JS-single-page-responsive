@@ -328,14 +328,19 @@ a.feature-content{
 	
 }
 .contact-section{
-background-image:url("../images/pi.jpg");
+background-image:url("../images/bg-3.jpg");
 	display:block;
     background-repeat:no-repeat;
     background-size: 100% 100%;
     width:100%;
-    height:350px;	
+    height:600px;	
 	margin-top:50px;	
 	
+}
+
+
+.contact-content {
+    margin-top: 135px;
 }
 .contact-content h1{
     color: #fff !important;
@@ -344,12 +349,56 @@ background-image:url("../images/pi.jpg");
     margin: 0 0 10px;
     background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
     padding: 20px 15px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 98px;
+    margin-right: 98px;
     color: #000;
     line-height: 1.5;
     font-size: 18px;
 }
 .form-group {
     margin-bottom: 15px;
+	
+}
+.input-form{
+	
+	
+}
+.msg-form{
+	
+}
+.contact-content h1 {
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  text-shadow: 2px 2px #333;
+}
+.contact-content p {
+    background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 20px 15px;
+}
+.contact-form-left { padding-left: 0; }
+.contact-form-right { padding-right: 0; }
+input {
+    margin-bottom: 15px;    
+}
+.form-control {
+  border: none;
+  background: rgba(242, 242, 242, 0.4);
+}
+#comment.form-control {
+
+}
+.form-group button {
+  background: #262628 none repeat scroll 0 0;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius:10px;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
 }
